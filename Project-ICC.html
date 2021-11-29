@@ -1,0 +1,167 @@
+<!doctype.html>
+<html>
+<head>
+	<title>Cricket-Ranking</title>
+	<link rel="stylesheet" type="text/css" href="cric.css">
+</head>
+<body>
+<div class="header">
+	<h1>International Cricket Council</h1>
+ </div>
+ <div class="container">
+ 	<div class="left-col">
+ 		    <img src="icc.jpg" width="270">
+        <br>
+         <div class="cc1">
+       <ul style="list-style-type:none;">
+        <br>
+        <br>
+        <li><a href="https://www.google.com/search?q=current+match+world+cup&rlz=1C1UEAD_enIN947IN947&oq=current+matc&aqs=chrome.5.69i57j0i131i433i512j0i512l8.8045j1j15&sourceid=chrome&ie=UTF-8#sie=lg;/m/01182lm4;5;/m/026y268;mt;fp;1;;" target="blank">Matches</a></li>
+        <br>
+        <br>
+        <li><a href="https://www.google.com/search?q=t20+world+cup+2021&rlz=1C1UEAD_enIN947IN947&sxsrf=AOaemvK_4_a4J5MAVyn6lqB9o8xxS45w0Q:1636294283372&source=lnms&sa=X&ved=2ahUKEwjvjIict4b0AhWbfXAKHdiuAaIQ_AUoAHoECAEQAg&biw=1366&bih=657&dpr=1#sie=lg;/m/01182lm4;5;/m/026y268;nw;fp;1;;" target="_blank">News</a></li>
+        <br>
+        <br>
+        <li><a href="https://www.icc-cricket.com/awards/overview" target="_blank">ICC Awards</a></li>
+        <br>
+        <br>
+        <li><a href="https://www.google.com/search?q=t20+world+cup+2021&rlz=1C1UEAD_enIN947IN947&sxsrf=AOaemvK_4_a4J5MAVyn6lqB9o8xxS45w0Q:1636294283372&source=lnms&sa=X&ved=2ahUKEwjvjIict4b0AhWbfXAKHdiuAaIQ_AUoAHoECAEQAg&biw=1366&bih=657&dpr=1#sie=lg;/m/01182lm4;5;/m/026y268;lb;fp;1;;" target="_blank">Stats</a></li>
+        </ul>
+      </div>  
+ 	</div>
+ 	<div class="center-col">
+ 		<h2>ICC Team Rankings</b></h2>
+      <br>
+<!-- NOW LETS SEE ABOUT TABLES -->
+<table>
+  <!-- HERE ARE THE REFERENCE LINK WHERE I USED CSS STYLE "https://www.tutorialrepublic.com/html-tutorial/html-tables.php" -->
+  <!-- FIRSTLY I HAVE CREATED A TABLE AND I CLOSED A TABLE , UNDER THE TABLE WE SHOULD DECLARE A HEAD AND BODY -->
+  <thead>
+    <!-- HERE I HAVE CREATED A HEAD AND I CLOSED THE HEAD , UNDER THE HEAD I HAVE DECLARED <tr>
+    WHICH MEANS TABLE ROW IT IS USED TO DISPLAY THE DETAILS IN ROW WISE -->
+    <tr>
+      <!-- UNDER THAT I DECLARED <th> WHISH IS USED TO LIST THE DETAILS IN TOP -->
+        <th>Rank</th>
+        <th>Team</th>
+        <th>Ratings</th>
+        <th>Points</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <!-- <td> WHICH MEANS TABLE ROW -->
+      <td>1</td>
+        <td><button onclick="getCountryInfo(0)">India</button></td>
+        <td>126</td>
+        <td>2764</td>
+    </tr>
+    <tr>
+      <td>2</td>
+        <td><button onclick="getCountryInfo(1)">New Zeland</button></td>
+        <td>119</td>
+        <td>2987</td>
+    </tr>
+    <tr>
+      <td>3</td>
+        <td><button onclick="getCountryInfo(2)">Australia</button></td>
+        <td>108</td>
+        <td>1844</td>
+    </tr>
+    <tr>
+      <td>4</td>
+        <td><button onclick="getCountryInfo(3)">England</button></td>
+        <td>107</td>
+        <td>3753</td>
+    </tr>
+    <tr>
+      <td>5</td>
+        <td><button onclick="getCountryInfo(4)">Pakistan</button></td>
+        <td>92</td>
+        <td>2481</td>
+    </tr>
+    <tr>
+      <td>6</td>
+        <td><button onclick="getCountryInfo(5)">South Africa</button></td>
+        <td>88</td>
+        <td>1675</td>
+    </tr>
+    <tr>
+      <td>7</td>
+        <td><button onclick="getCountryInfo(6)">West Indies</button></td>
+        <td>80</td>
+        <td>2396</td>
+    </tr>
+    <tr>
+      <td>8</td>
+        <td><button onclick="getCountryInfo(7)">Sri Lanka</button></td>
+        <td>78</td>
+        <td>2095</td>
+    </tr>
+    <tr>
+      <td>9</td>
+        <td><button onclick="getCountryInfo(8)">Bangladesh</button></td>
+        <td>49</td>
+        <td>779</td>
+    </tr>
+    <tr>
+      <td>10</td>
+        <td><button onclick="getCountryInfo(9)">Zimbabwe</button></td>
+        <td>31</td>
+        <td>342</td>
+    </tr>
+  </body>
+</table>
+<br>
+<p>Indian legend Kapil Dev said the country's cricket players prioritised the cash-rich Indian Premier League over national duty, after the pre-tournament favourites were dumped out of the T20 World Cup. "When the players prefer to play IPL over playing for the country, what can we say? I believe that every player should feel proud playing for their country," Dev, who led India to a World Cup victory in 1983, told ABP News. </p>
+
+  </div>
+ 	<div class="right-col"> 
+ 		<h2><a href="https://www.thehindu.com/sport/cricket/rahul-dravid-appointed-as-head-coach-of-indian-mens-cricket-team/article37328545.ece" target="blank"><u> Trending </u> </a></h2>
+    <span><button id="inc" onclick="imgIncDec(`inc`)"> + </button>
+    <button id="dec" onclick="imgIncDec(`dec`)"> - </button></span>
+    <img id="pix" onclick="imgSizeChange()" src="ind.jpg" title="CRIC" width="300">
+    <div class="cc3">
+    <p id="news">"To more news click any country"</p>
+    
+    
+    </div>
+
+ 	</div>
+ 	
+ </div>
+ <script> 
+      let trendings = [{image:"rh.jpg",news:"Rahul Dravid, on Wednesday (November 3), was announced as the new Team India head coach, who will take over from Ravi Shastri post the T20 World Cup 2021 edition. Many believed Dravid was the ideal candidate to replace Shastri -- who took over as India's coach since mid-2017 -- and the Sourav Ganguly-led Indian cricket board managed to convince The Wall for the top job, after reports initially claimed that Dravid wasn't willing to stay away from his young family for so long with coaching duties."},{image:"nz.jpg",news:"The New Zealand national cricket team represents New Zealand in men's international cricket. Named the Black Caps, they played their first Test in 1930 against England in Christchurch, becoming the fifth country to play Test cricket"},{image:"aus.jpg",news:"The Australia men's national cricket team represents Australia in men's international cricket. As the joint oldest team in Test cricket history, playing in the first ever Test match in 1877,[9] the team also plays One-Day International (ODI) and Twenty20 International (T20I) cricket, participating in both the first ODI, against England in the 1970–71 season[10] and the first T20I, against New Zealand in the 2004–05 season,[11] winning both games"},{image:"eng.jpg",news:"England, who are currently calling the shots in the ICC T20 World Cup 2021, have a crucial couple of months coming up as this World Cup will be followed by an all-important Ashes series down under."},{image:"pak.jpg",news:"In the 1992 ODI World Cup, Imran infused the spirit of fighting and winning in the team. Now Babar is also doing the same, boosting the morale of the team with the help of interim head coach Saqlain Mushtaq. Pakistani cricketers are carrying the national flag during their training sessions and pre-match warm-up sessions."},{image:"sa.jpg",news:"In the 1992 ODI World Cup, Imran infused the spirit of fighting and winning in the team. Now Babar is also doing the same, boosting the morale of the team with the help of interim head coach Saqlain Mushtaq. Pakistani cricketers are carrying the national flag during their training sessions and pre-match warm-up sessions."},{image:"wi.jpg",news:"Phil Simmons, the coach of the visiting West Indies team, thinks hosts Bangladesh are the clear favorites in the upcoming series against them. The comment is based on the fact that the Caribbean side is missing out some of their best performers from the series as the players cited Covid-19 and personal concerns to deny a tour to Bangladesh. "},{image:"srl.jpg",news:"Sri Lanka are set to take on India in a six-match white-ball series starting July 13. Flower has been isolated from the rest of the squad which is undergoing hard quarantine on arrival.“Batting Coach of the Sri Lanka National Team Grant Flower has tested positive for COVID-19,” Sri Lanka Cricket (SLC) said in a statement"},{image:"ban.jpg",news:"Bangladesh coach Russell Domingo cut a frustrated figure after his side started their run chase in Tuesday's second Twenty20 against New Zealand without knowing what tally they needed to win and criticised the conduct of the match officials."},{image:"zim.jpg",news:"Zimbabwe head coach and former Indian cricketer Lalchand Rajput has been exempted from visiting Pakistan after the Indian embassy intervened and stopped the former player from travelling to Pakistan.He was appointed as Zimbabwe’s full-time coach in August 2018.Lalchand Rajput has represented India in two Tests & four One Day Internationals."}]
+      function getCountryInfo(id){
+              const country = trendings[id]
+              const img = document.getElementById("pix")
+              const p = document.getElementById("news")
+              img.src = country.image
+              p.innerHTML = country.news
+
+      }
+
+      function imgSizeChange(){
+              const jena = document.getElementById("pix")
+              jena.width = 600
+              jena.height = 600
+           
+      }
+
+      function imgIncDec(image){
+              const img = document.getElementById("pix")
+              if(image==="inc"){
+                img.width = img.width+50
+                img.height = img.height+50
+              }
+              else{
+                img.width = img.width-50
+                img.height = img.height-50
+              }
+      }
+           
+             
+      
+ </script>
+ <script type="text/javascript"></script>
+</body>
+</html>
